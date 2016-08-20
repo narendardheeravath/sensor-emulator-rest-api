@@ -1,5 +1,8 @@
 # sensor-emulator-rest-api
 
+
+#Environments: Java 1.8, MongoDb, EasyRules, Spring MVC, Spring Boot, Morphia API, Spring, Rest API, Tomcat
+
 Steps to execute project
 
 1.  Make sure that MongoDb is installed on machine before executing project
