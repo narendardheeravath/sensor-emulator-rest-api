@@ -6,9 +6,12 @@
 Steps to execute project
 
 1.  Make sure that MongoDb is installed on machine before executing project
+
+
      1.1. Download the MongoDb form https://www.mongodb.com/download-center#community if not installed
      1.2. Install the MongoDb once download is complete
      1.3. Run mongod.exe from C:\Program Files\MongoDB\Server\3.2\bin through commond prompt
+     
 2. Run the /sensor-emulator-rest-api/src/main/java/io/egen/sensor/emulator/SensorApplication.java as SpringBootApplication
     by passing VM Argument and below is VM arguments
         -Dbase.value=150
