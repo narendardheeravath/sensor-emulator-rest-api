@@ -9,12 +9,18 @@ Steps to execute project
 
 
      1.1. Download the MongoDb form https://www.mongodb.com/download-center#community if not installed
+     
+     
      1.2. Install the MongoDb once download is complete
+     
+     
      1.3. Run mongod.exe from C:\Program Files\MongoDB\Server\3.2\bin through commond prompt
      
 2. Run the /sensor-emulator-rest-api/src/main/java/io/egen/sensor/emulator/SensorApplication.java as SpringBootApplication
     by passing VM Argument and below is VM arguments
         -Dbase.value=150
+        
+        
 3. SpringBootApplication SensorApplication deployed into server when we run and all rest end points are available to consume by Emulator once deployement is successful. and port is 8080 by default
 
 
@@ -23,16 +29,16 @@ Steps to execute project
      
 #create
 
-			1. create – this is the API that will consume data from the sensor emulator by post
+			a. create – this is the API that will consume data from the sensor emulator by post
  					 http://localhost:8080/create
 #read
 
-			2. read – reads all the metrics stored in your database
+			b. read – reads all the metrics stored in your database
   					http://localhost:8080/readMetrics
   					
 #readByTimeRange
 
-			3. readByTimeRange – reads all the metrics that were created between the given two timestamps
+			c. readByTimeRange – reads all the metrics that were created between the given two timestamps
                    http://localhost:8080/readMetricsByTimeRange?startTime=1234&endTime=12345
 
 	
@@ -40,11 +46,11 @@ Steps to execute project
 	3.2. Exposed the below Alert APIs using Spring MVC
 	
 #read
-			1. read – reads all alerts that are stored in the database
+			a. read – reads all alerts that are stored in the database
 					http://localhost:8080/readAlerts
 #readByTimeRange
 
-			2. readByTimeRange – reads all alerts that are created between the given two timestamps
+			b. readByTimeRange – reads all alerts that are created between the given two timestamps
  					http://localhost:8080/readAlertsByTimeRange?startTime=1234&endTime=12345
  					
 
