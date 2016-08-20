@@ -43,7 +43,7 @@ Steps to execute project
 
 	
 	
-	3.2. Exposed the below Alert APIs using Spring MVC
+3.2. Exposed the below Alert APIs using Spring MVC
 	
 #read
 			a. read – reads all alerts that are stored in the database
