@@ -1,3 +1,5 @@
+# sensor-emulator-rest-api
+
 Steps to execute project
 
 1.  Make sure that MongoDb is installed on machine before executing project
