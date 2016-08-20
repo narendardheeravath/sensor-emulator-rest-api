@@ -96,8 +96,10 @@ Simple java program that acts like a sensor and sends information (in JSON forma
 where timeStamp indicates when this data was sent and the value indicates a metric.
 
 # Entities - holds the data and save to MongoDb using Morphia API
-  Alerts.java
-  Metric.java
+     Alerts.java
+ 
+     Metric.java
+  
            
 # MongoDB as your datastore with two collections
 
@@ -106,27 +108,35 @@ where timeStamp indicates when this data was sent and the value indicates a metr
      2. alerts – stores the alerts that were created by the rules and save into db if rules are true - AlertDAO.java
 
 #DAO
- MetricDAO.java -   stores the data that comes from sensor and also read the metric data from db
- AlertDAO.java -  stores the alerts that were created by the rules and save into db and reads the alerts data from db 
+
+
+    	MetricDAO.java -   stores the data that comes from sensor and also read the metric data from db
+      AlertDAO.java -  stores the alerts that were created by the rules and save into db and reads the alerts data from db 
  
           
 # Rules - using EasyRules API
-  OverWeightRule.java
-  UnderWeightRule.Java
-  Detects under weight – if the weight of the person drops below 10% of his base weight
-    Create a new alert and save it in MongoDB
-  Detects over weight – if the weight of the person shoots 10% over his base weight
-   Create a new alert and save it in MongoDB
+
+	  OverWeightRule.java
+     UnderWeightRule.Java
+  
+     Detects under weight – if the weight of the person drops below 10% of his base weight
+             Create a new alert and save it in MongoDB
+     Detects over weight – if the weight of the person shoots 10% over his base weight
+          Create a new alert and save it in MongoDB
    
 #RuleExecutor
- RuleExecutor.java which fires the both rules while consume th sensor data.
+
+
+		RuleExecutor.java which fires the both rules while consume th sensor data.
    
    
 # Rest Controller
-SensorController.java exposes the rest api using Spring MVC
+
+		SensorController.java exposes the rest api using Spring MVC
 
 #SpringBootApplication
-   SensorApplication.java-which deploy the application on server using spring boot
+
+	SensorApplication.java which deploy the application on server using spring boot
    
 
 
