@@ -6,13 +6,16 @@
 Steps to execute project
 
 1.  Make sure that MongoDb is installed on machine before executing project
-     1.1. Download the MongoDb form https://www.mongodb.com/download-center#community
+     1.1. Download the MongoDb form https://www.mongodb.com/download-center#community if not installed
      1.2. Install the MongoDb once download is complete
      1.3. Run mongod.exe from C:\Program Files\MongoDB\Server\3.2\bin through commond prompt
 2. Run the /sensor-emulator-rest-api/src/main/java/io/egen/sensor/emulator/SensorApplication.java as SpringBootApplication
-     2.1. Make sure that we have to pass VM Argument while running the SensorApplication.java and below is VM arguments
+    by passing VM Argument and below is VM arguments
         -Dbase.value=150
-3. SpringBootApplication SensorApplication deployed into server and all rest end points are available to consume by Emulator once deployement is successful. and port is 8080 by default
+3. SpringBootApplication SensorApplication deployed into server when we run and all rest end points are available to consume by Emulator once deployement is successful. and port is 8080 by default
+
+
+
      3.1. Below are the rest end points which exposed as Metric APIs using Spring MVC,
      
 #create
@@ -29,6 +32,8 @@ Steps to execute project
 			3. readByTimeRange – reads all the metrics that were created between the given two timestamps
                    http://localhost:8080/readMetricsByTimeRange?startTime=1234&endTime=12345
 
+	
+	
 	3.2. Exposed the below Alert APIs using Spring MVC
 	
 #read
