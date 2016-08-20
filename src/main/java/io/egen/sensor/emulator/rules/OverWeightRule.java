@@ -40,7 +40,12 @@ public class OverWeightRule {
 	 */
 	@Condition
 	public boolean checkUnderWeight() {
-		int base_weight = Integer.parseInt(System.getProperty("base.value"));
+		String baseValue = System.getProperty("base.value");
+		int base_weight = 150;
+		if(baseValue!=null)
+		{
+			 base_weight =Integer.parseInt(baseValue);;
+		}
 		int base_weight10PEr = (base_weight * 10) / 100;
 		float percentageChange = metric.getValue() - base_weight10PEr;
 		if (percentageChange > base_weight) {

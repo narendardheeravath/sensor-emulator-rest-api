@@ -98,7 +98,7 @@ public class Emulator {
 		String json = "{\"timeStamp\": \"" + String.valueOf(System.currentTimeMillis()) + "\", \"value\": \"" + value
 				+ "\"}";
 		this.mockMvc
-				.perform(post("http://localhost:8080/create").contentType(MediaType.APPLICATION_JSON).content(json))
+				.perform(post(url+"/create").contentType(MediaType.APPLICATION_JSON).content(json))
 				.andDo(print());
 		Thread.sleep(interval_in_ms);
 	}

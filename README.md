@@ -8,9 +8,9 @@ Steps to execute project
      1.3. Run mongod.exe from C:\Program Files\MongoDB\Server\3.2\bin through commond prompt
 2. Run the /sensor-emulator-rest-api/src/main/java/io/egen/sensor/emulator/SensorApplication.java as SpringBootApplication
      2.1. Make sure that we have to pass VM Argument while running the SensorApplication.java and below is VM arguments
-        -Dbase.value=150 -Dapi.url=http://localhost:8080
-3. SpringBootApplication SensorApplication deployed into localhost and all rest end points are available to consume by Emulator once completes
-     3.1. Below are the rest end points which exposed the below Metric APIs using Spring MVC,
+        -Dbase.value=150
+3. SpringBootApplication SensorApplication deployed into server and all rest end points are available to consume by Emulator once deployement is successful. and port is 8080 by default
+     3.1. Below are the rest end points which exposed as Metric APIs using Spring MVC,
 
 			1. create – this is the API that will consume data from the sensor emulator
  					post- http://localhost:8080/create
