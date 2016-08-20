@@ -37,9 +37,9 @@ Steps to execute project
  					http://localhost:8080/readAlertsByTimeRange?startTime=1234&endTime=12345
  					
 
-4. Run the Emulator.java which I copied in same project as Java Application
-     4.1 Make sure that we have to pass VM Argument while running the SensorApplication.java and below is VM arguments
+4. Run the Emulator.java as Java Application by passing VM Arguments -Dbase.value=150 -Dapi.url=http://localhost:8080 below is VM arguments
         -Dbase.value=150 -Dapi.url=http://localhost:8080
+#Note: Make sure that SensorApplication is running before start this Emulator.java
         
 5.  We can monitor the data by calling rest api - readMetrics and readAlerts
 
