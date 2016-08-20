@@ -18,6 +18,7 @@ Steps to execute project
      
 2. Run the /sensor-emulator-rest-api/src/main/java/io/egen/sensor/emulator/SensorApplication.java as SpringBootApplication
     by passing VM Argument and below is VM arguments
+       
         -Dbase.value=150
         
         
@@ -55,8 +56,10 @@ Steps to execute project
  					
 
 4. Run the Emulator.java as Java Application by passing VM Arguments -Dbase.value=150 -Dapi.url=http://localhost:8080 below is VM arguments
+        
         -Dbase.value=150 -Dapi.url=http://localhost:8080
 #Note: Make sure that SensorApplication is running before start this Emulator.java
+
         
 5.  We can monitor the data by calling rest api - readMetrics and readAlerts
 
