@@ -40,7 +40,7 @@ Steps to execute project
 #readByTimeRange
 
 			c. readByTimeRange – reads all the metrics that were created between the given two timestamps
-                   http://localhost:8080/readMetricsByTimeRange?startTime=1234&endTime=12345
+                http://localhost:8080/readMetricsByTimeRange?startTime=1471688999835&endTime=1471740301319
 
 	
 	
@@ -52,7 +52,7 @@ Steps to execute project
 #readByTimeRange
 
 			b. readByTimeRange – reads all alerts that are created between the given two timestamps
- 					http://localhost:8080/readAlertsByTimeRange?startTime=1234&endTime=12345
+ 					 http://localhost:8080/readAlertsByTimeRange?startTime=1471680843247&endTime=1471740296253
  					
 
 4.   Run the Emulator.java as Java Application by passing VM Arguments -Dbase.value=150 -Dapi.url=http://localhost:8080 below is VM arguments
